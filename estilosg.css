@@ -1,0 +1,98 @@
+/*Autor: Yordys mendez
+Correo:yordys.mendez@gmail.com*/
+
+html * { margin: 0px;
+    	padding: 0px;
+    	box-sizing: border-box; 
+   }
+
+
+body{font-family:Arial, Helvetica, sans-serif;/*fuentes*/
+	font-size: 15px; /*Tamaño Base*/
+	color: #707070; /*color base */
+}
+
+h1 {font-size: 2em; /*2x15=30px*/
+}
+
+h2 {font-size: 1.5em; /*1.5x15=22.5px*/
+}
+
+h3 {font-size: 1em; /*1x15=15px*/
+}
+p  {line-height: 2em;}
+
+a:link{ color:#3b2211;  } /*estado reposo*/
+a:hover{color: #de820f;  } /*estado sobre*/
+
+
+/*estilos para cabecera */
+.cabecera{border-top: 10px #3b2211 solid;
+		padding-top:2%;
+		padding-bottom: 2%; 
+		background-color: #fff;}
+
+/*etiquetas logo y banner*/
+#logo { float: left;}
+#banner {float: center;
+		margin-left: 100px}
+  
+/*barra de navegación*/
+.navbar {float: right;}
+
+/*selector padre(contenedor)  selector hijo(anidado)*/
+.navbar li { 
+    display: inline-block;/* el elemento se transforma en bloque
+                           con propiedades de linea  otra alternativa
+                           para columnas pero deja un margen adicional*/
+
+	list-style: none; /*quita viñetas*/
+}
+
+.navbar a{
+	display: block;/*la etiqueta a se transforma en bloque*/
+	padding: 10px; /*al ser bloque se aplica el relleno*/
+	text-decoration: none ; /*quita subrayado de a*/
+}
+
+.navbar a:hover{
+	background-color:#3b2211; /*aplicando color de fondo*/
+    color:#fff; /*color de texto*/
+}
+
+.titulo_principal { 
+text-align: center;
+border-bottom: 2px #cccccc dotted;
+padding-bottom: 10px;
+margin-bottom:10px; 
+ }
+
+.pie {background-color: #3b2211; color: #fff; text-align: center ; padding: 3%}
+
+
+.restorant{ 
+	text-align: center; 
+	background-color: #f6f6f6;
+	/*relleno superior e inferior en 5%
+	derecha e izquierda de 10%*/
+	padding: 5% 10% ;
+}
+
+.carta {padding-top: 5%; padding-bottom: 5px}
+
+.banner {background-image: url(banner.jpg);
+		height: 200px;
+		background-size: cover;
+		background-position: center;
+}
+
+.clearfix {clear: both;}
+
+.img-responsiva {width: 100%;
+		height: auto;
+		max-width: 540px;
+}
+
+.contenedor {margin: auto;
+			max-width: 576px
+}

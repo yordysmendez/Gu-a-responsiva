@@ -1,0 +1,35 @@
+/*  CONSULTA PARA TABLET
+min-width:577px   max-width:768px   */
+@media screen and (min-width: 577px) and (max-width: 768px){
+    .contenedor{ 
+       max-width: 768px;
+       margin: auto;
+    }
+    
+    /*crea una clase para diagramar en  2 columnas*/
+    .col-50 {
+        width: 50%; /*100/5=50*/
+        padding:1%;
+        float: left;
+    }
+    
+    } /*fin consulta tablet*/
+    
+    
+    /*consulta para desktop, ancho mínimo 960px
+    en este caso no se especifica ancho máximo */
+    @media screen and (min-width:769px){ 
+    /*definir un nuevo  ancho máximo para los contenedores*/
+    .contenedor{ 
+       max-width: 1360px;
+       margin: auto;
+    }
+    
+    /*crea una clase para diagramar en  3columnas*/
+    .col-33 {
+        width: 33.33%; /*100/3=33.33*/
+        padding:1%;
+        float: left;
+    }
+    
+    }/*cierre de la consulta*/
